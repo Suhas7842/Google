@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function GetAnchors() { var message = "";
+for (i = 0; i < document.anchors.length; i++) {
+message += i + ". anchor: " + document.anchors.item (i).innerHTML "\n"; }
+alert (message); }
+</script>
+</head>
+<body>
+<a name="an1" href="#">apple</a><br/>
+<a name="an2" href="#">peach</a><br/>
+<a name="an3" href="#">pear</a><br/>
+<br /><br />
+<button onclick="GetAnchors();">Get anchors!</button>
+</body>
+</html>

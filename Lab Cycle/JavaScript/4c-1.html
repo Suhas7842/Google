@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Matrix Addition</title>
+</head>
+<body>
+<script>
+const arr=[[],[],[]];
+const arr1=[[],[],[]];
+const sums=[[],[],[]]; var i,j; for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+a=parseInt(prompt("enter value")); arr[i][j]=a;
+} }
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+a=parseInt(prompt("enter value")); arr1[i][j]=a;
+}
+}
+document.write('['); for(i=0;i<3;i++)
+{
+document.write("["); for(j=0;j<3;j++)
+{
+sums[i][j]=arr[i][j]+arr1[i][j]
+}
+document.write(sums[i][j]+",");
+}
+document.write(']'+"<br>");
+}
+document.write(']');
+</script>
+</body>
+</html>

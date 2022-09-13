@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Get days in Month</title>
+</head>
+<body>
+<script>
+var month = prompt("Enter month");
+var year = prompt("Enter year");
+var getDaysInMonth = function(month,year) {
+ return new Date(year, month, 0).getDate();
+};
+document.write("Number of days in the month: "+getDaysInMonth(month,year));
+</script>
+</body>
+</html>

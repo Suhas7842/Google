@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript"> function GetTableInnerHTML () {
+if (document.all) { // Internet Explorer, Opera, Google Chrome  and Safari
+var table = document.all.namedItem ("myTable");
+}
+else {
+var table = document.getElementById ("myTable");
+}
+alert (table.innerHTML);
+}
+</script>
+</head>
+<body>
+<button onclick="GetTableInnerHTML ();">Get the innerHTML of the table!</button>
+<br /><br />
+<table id="myTable" border="1px">
+<tbody>
+<tr>
+<td>First row in the table.</td>
+</tr>
+</tbody>
+ </table>
+</body>
+</html>

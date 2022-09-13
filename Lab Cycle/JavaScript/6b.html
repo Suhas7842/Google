@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript"> function GetListItems () {
+var list = document.getElementById ("myList");
+if (list.children) {
+for (var i = 0; i < list.children.length; i++) { var child = list.children[i];
+alert ("The " + (i+1) + ". list item is " + child.innerHTML);
+}
+}
+else {
+for (var i = 0; i < list.childNodes.length; i++) { var child = list.childNodes[i];
+if (child.nodeType == 1 /*Node.ELEMENT_NODE*/) { alert ("The " + (i+1) + ". list item is " + child.innerHTML);
+}
+}
+}
+}
+</script>
+</head>
+<body>
+<ol id="myList">
+<li>Apple</li>
+<li>Peach</li>
+<li>Cherry</li>
+</ol>
+<button onclick="GetListItems ();">Get the list items!</button>
+</body>
+</html>

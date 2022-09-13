@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Track</title>
+</head>
+<style>
+label{
+    display: inline-block;  
+    clear: left;
+    width: 140px;
+}
+input {
+  display: inline-block;
+  clear: left;
+    width: 200px;
+    text-align: right;
+}
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0px #999;
+}
+button:hover {background-color: #3e8e41}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+</style>
+<body>
+<center>
+<a href>Login</a>&nbsp;&nbsp;
+<a href="1.html" target="_blank">Sign Up</a>&nbsp;&nbsp;
+<a href="2.html" target="_self">Track order</a>
+<h1>Track your order</h1>
+<br>
+<h3>Rate your Shopping experience</h3>
+<br>
+  <p>Delivery of product on time:</p>
+  <input type="range" min="0" max="100" value="50"><meter id="service" value="8" min="0" max="10">8 out of 10</meter><br>
+  <p>Product Quality:</p>
+  <input type="range" min="0" max="100" value="50"><meter id="food" value="0.6">60%</meter>
+  <p>How friendly the site is:</p>
+<input type="range" min="0" max="100" value="50">
+  <meter id="service" value="8" min="0" max="10">8 out of 10</meter>
+  <p>Were you able to find the product which you were looking for?</p>
+  <input type="radio" id="html" name="option" value="Yes">Yes
+<input type="radio" id="html" name="option" value="No">No
+</form>
+<p>Overall</p>
+ <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<br>
+<br>
+ <button>Submit</button>
+<br>
+<br>
+<br>
+<p>About Us|Privacy Policy|Contact Us|FAQ|Terms & Conditions|Copyright© 2018</p>
+</center>
+</body>
+</html>

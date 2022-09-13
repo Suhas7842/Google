@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Letter count within a string</title>
+</head>
+<body>
+<script>
+var str = prompt("Enter a word");
+var letter = prompt("Enter a letter to search");
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+document.write("Number of occurences of the letter in the given word: "+char_count(str,letter));
+</script>
+</body>
+</html>

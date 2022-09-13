@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Validation</title>
+</head>
+<body>
+<center>
+<h1><u>Details Validation</u></h1>
+<br>
+<br>
+<form>
+Username: <input type="text" id="myText" ><br><br>
+Password: <input type="password" id="myText1" ><br><br>
+Confirm Password: <input type="password" id="myText2" ><br><br>
+Mobile  Number: <input type="tel" id="myText3" ><br><br>
+<button onclick="myFunction()">Submit</button>
+</form>
+<script>
+function myFunction()
+{
+var x = document.getElementById("myText").value;
+var y = document.getElementById("myText1").value;
+var z = document.getElementById("myText2").value;
+var a = document.getElementById("myText3").value;
+if(x.length<6)
+{
+alert("Username must be atleast 6 characters");
+}
+else if(y!=z)
+{
+alert("Password and Confirm Password must match");
+}
+else if(a.length!=10)
+{
+alert("Mobile Number must be exactly 10 numeric digits");
+}
+else
+{
+alert("Details submitted Successfully");
+}
+}
+</script>
+</center>
+</body>
+</html>

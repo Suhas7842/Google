@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math_operation</title>
+      <script language="javascript">
+          let a,b,ch,check;
+          a=parseInt(window.prompt("Enter a number: "));
+          b=parseInt(window.prompt("Enter another number: "));
+          ch=window.prompt("Enter mathematical opertation: ");
+          check=1;
+          while(check==1){
+          switch(ch){
+             case "+":
+                  document.write("Addition is: "+ (a+b) + "<br>");
+                  break;
+             case "-":
+                  document.write("Substraction is: "+ (a-b) + "<br>");
+                  break;
+             case "*":
+                  document.write("Multiplication is: " + (a*b) + "<br>");
+                  break;
+             case "/":
+                  document.write("Division is: "+ (a/b) + "<br>");
+                  break;
+             default:
+                   document.write("Enter valid operation");
+                }
+          check=window.prompt("Proceed-- 1 to continue or 0 to exit: ");
+          if(check==1)
+          {
+              ch=window.prompt("Enter mathematical opertation: ");
+          }
+         }
+       </script>
+   </head>
+  <body></body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Smallest Integer </title>
+</head>
+<body>
+<h1>Smallest Integer</h1>
+<hr>
+
+<p>Press F5 or Refresh to load script again.</p>
+<script type="text/javascript">
+
+var itemcount;
+var i;
+var small=0;
+var cal;
+itemcount = window.prompt("How many inputs you wish to enter:");
+var count = parseInt(itemcount);
+var myarray= new Array(count);
+for(i=0;i<count;i++)
+{
+myarray[i]= window.prompt("Enter any number:");
+}
+cal=myarray[0];
+for(i=0;i<count;i++)
+{
+if(parseInt(myarray[i])< cal)
+cal= myarray[i];
+}
+
+document.writeln( "<h1> Smallest of all input numbers is: " + cal + "</h1>" );
+
+</script>
+</body>
+</html>

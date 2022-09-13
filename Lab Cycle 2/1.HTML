@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Signup.html</title>
+</head>
+<style>
+label{
+    display: inline-block;  
+    clear: left;
+    width: 140px;
+}
+input {
+  display: inline-block;
+  clear: left;
+    width: 110px;
+    text-align: left;
+}
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0px #999;
+}
+button:hover {background-color: #3e8e41}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+
+</style>
+<body>
+<h1>Sign Up!</h1>
+<form>
+  <label for="fname">Username:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <br>
+  <label for="lname">Password:</label>
+  <input type="text" id="lname" name="lname"><br>
+  <br>
+  <label for="gender">Gender:</label>
+<form action="">
+  <input type="radio" name="gender" value="male">Male
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="other">Other
+</form>
+  <label for="dob">DOB:</label>
+  <input type="date" id="dob" name="dob" value="yyyy-mm-dd"
+       min="2000-01-01" max="2022-07-11"><br>
+  <br>
+  <label for="PhoneNumber">Phone Number:</label>
+  <input type="text" id="Phone" name="Phone"><br>
+  <br>
+  <label for="email">Email ID:</label>
+  <input type="text" id="email" name="email"><br>
+  <br>
+  <label for="Languagesknown">Languages Known:</label>
+  <input type="checkbox" id="English" name="English" value="English">English
+  <input type="checkbox" id="Hindi" name="Hindi" value="Hindi">Hindi
+  <input type="checkbox" id="Telugu" name="Telugu" value="Telugu">Telugu
+  <br>
+  <br>
+  <form method="post" enctype="multipart/form-data">
+  <div>
+  <label for="image">Profile pic:</label>
+  <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png"><br>
+  </div>
+  <br>
+    <button>Register</button>
+    &nbsp;&nbsp;
+    <button>Reset</button>
+</form>
+<br>
+<p>About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions | Copyright© 2018 | Like and Connect with us Facebook Twitter G+</p>
+</body>
+</html>
